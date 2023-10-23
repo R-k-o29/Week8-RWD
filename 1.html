@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        padding: 0%;
+        margin: 0;
+        display: flex;
+        background-color: #000000;
+        align-items: center;
+        padding: 10px;
+      }
+      .navitems {
+        width: 100%;
+        text-align: center;
+      }
+      .navlogo {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-left: 50px;
+      }
+      .navbutton {
+        float: right;
+        margin-right: 50px;
+        width: 150px;
+        height: 35px;
+        border: none;
+        border-radius: 10px;
+        background-color: #1919cc;
+        color: aliceblue;
+        font-weight: bold;
+      }
+      .navitem {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 15px;
+        font-weight: bold;
+      }
+      .togglebar {
+        width: 50px;
+        height: 50px;
+      }
+      .togglelogo {
+        width: 50px;
+        height: 50px;
+      }
+      .togglebar{
+        display: none;
+      }
+      /* -----------------------------nav */
+      .nav{
+        max-width: 230px;
+        height: 260px;
+        border: 1px solid grey;
+        float: right;
+        display: none;
+      }
+      .navitem1{
+        margin-left: 10px;
+        height: 50px;
+        text-decoration: none;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s ease-in-out;
+      }
+      .navbutton1{
+        width: 200px;
+        height: 50px;
+        margin-left: 10px;
+        border: none;
+        background-color:#1919cc ;
+        border-radius: 10px;
+        color: aliceblue;
+        font-weight: bold;
+        transition: all 0.4s ease-in-out;
+      }
+      .navitem1:hover,
+      .navbutton1:hover
+      {
+        background-color: #bedeef;
+        border-radius: 10px;
+      }
+
+      /* ----------------------------------------------------------------- */
+      @media screen and (max-width: 740px) {
+        .navbar {
+          
+          display: flex;
+        }
+        .navitemsi{
+            width: 650px;
+        }
+        .navitems {
+          display: none;
+        }
+        .togglebar{
+            margin-left: 20px;
+            display: flex;
+            justify-items: end;
+        }
+        .togglelogo{
+            float: right;
+        }
+    }    
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navitemsi">
+        <img
+          class="navlogo"
+          src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+          alt=""
+        />
+      </div>
+      <div class="navitems">
+        <a href="" class="navitem">Home</a>
+        <a href="" class="navitem">Blog</a>
+        <a href="" class="navitem">About</a>
+        <a href="" class="navitem">Content</a>
+      </div>
+      <div class="navitems">
+        <button class="navbutton">Login</button>
+      </div>
+      <div class="togglebar">
+        <img
+          src="https://icons.veryicon.com/png/o/miscellaneous/big-data-regular-monochrome-icon/sidebar-4.png"
+          alt=""
+          class="togglelogo"
+        />
+      </div>
+    
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .footer{
+            max-width: 1200vx;
+            background-color: black;
+            color: aliceblue;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            margin-top: 350px;
+            height: 390px;
+            justify-content: space-around;
+            
+        }
+        .item > h3{
+           font-weight: bold;
+        }.item1{
+          width: 500px;
+          margin-left: 100px;
+        }
+        .item2{
+          margin-left: 100px;
+        }
+        .item4{
+          margin-right: 100px;
+        }
+        
+        .item{
+            margin-top: 80px;
+            max-width: 600px;
+        }
+        input{
+            width: 300px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        button{
+            width: 310px;
+            height: 40px;
+            margin-top: 5px;
+            background-color: blue;
+            border-radius: 5px;
+            border: none;
+        }
+        p{
+            font-size: 20px;
+        }
+        /* ---------------------------------------------------rwd */
+        @media screen and (max-width:960px) {
+          .footer{
+            grid-template-columns: repeat(1,1fr);
+            height: 200vh;
+           
+          }
+          .item3{
+            margin-left: 100px;
+            margin-top: 0;
+          }
+          .item4{
+            margin-left: 100px;
+            margin-top: 0%;
+          }
+          
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="footer">
+      <div class="item item1">
+        <h3>One Card</h3>
+        <p>
+          India's best metal credit card. Built with full stack tech. Backed by
+          the principles of simplicity, transparency, and giving back control to
+          the user
+        </p>
+      </div>
+      <div class="item item2">
+        <h3>Navigation</h3><br>
+        <span class="sp">Home</span><br><br>
+        <span class="sp">About us</span><br><br>
+        <span class="sp">Carrers</span><br><br>
+        <span class="sp">Offers</span><br>
+      </div>
+      <div class="item item3">
+        <h3>Support</h3><br>
+        <span class="sp">F.A.Q</span><br><br>
+        <span class="sp">Cookies Policy</span><br><br>
+        <span class="sp">Terms of Service</span><br><br>
+        <span class="sp">Support</span><br>
+      </div>
+      <div class="item item4">
+        <h3>NewsLetter</h3>
+        <input type="email" name="email" id="email" placeholder="Your email id here"><br>
+        <button type="submit">Subscribe</button>
+      </div>
+    </div>
+  </body>
+</html>

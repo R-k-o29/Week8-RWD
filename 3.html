@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        padding: 0%;
+        margin: 0;
+        display: flex;
+        background-color: #000000;
+        align-items: center;
+        padding: 10px;
+      }
+      .navitems {
+        width: 100%;
+        text-align: center;
+      }
+      .navlogo {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-left: 50px;
+      }
+      .navbutton {
+        float: right;
+        margin-right: 50px;
+        width: 150px;
+        height: 35px;
+        border: none;
+        border-radius: 10px;
+        background-color: #1919cc;
+        color: aliceblue;
+        font-weight: bold;
+      }
+      .navitem {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 15px;
+        font-weight: bold;
+      }
+      .togglebar {
+        width: 50px;
+        height: 50px;
+      }
+      .togglelogo {
+        width: 50px;
+        height: 50px;
+      }
+      .togglebar {
+        display: none;
+      }
+      /* -----------------------------nav */
+      .nav {
+        max-width: 230px;
+        height: 260px;
+        border: 1px solid grey;
+        float: right;
+        display: none;
+      }
+      .navitem1 {
+        margin-left: 10px;
+        height: 50px;
+        text-decoration: none;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s ease-in-out;
+      }
+      .navbutton1 {
+        width: 200px;
+        height: 50px;
+        margin-left: 10px;
+        border: none;
+        background-color: #1919cc;
+        border-radius: 10px;
+        color: aliceblue;
+        font-weight: bold;
+        transition: all 0.4s ease-in-out;
+      }
+      .navitem1:hover,
+      .navbutton1:hover {
+        background-color: #bedeef;
+        border-radius: 10px;
+      }
+      /* ----------------------------------------------------main */
+
+      .main {
+        max-width: 1500px;
+        display: flex;
+        /* flex-wrap: ; */
+        justify-items: center;
+      }
+      .contentimg {
+        width: 550px;
+        height: 150px;
+      }
+      .content {
+        margin-top: 60px;
+        padding-left: 30px;
+        max-width: 750px;
+        height: 80vh;
+      }
+      .image {
+        height: 80vh;
+        margin-top: 30px;
+        max-width: 750px;
+      }
+      .head2 {
+        font-size: 60px;
+        margin-left: 20px;
+        color: #2b55ff;
+      }
+      .para {
+        padding-top: 20px;
+        font-size: 20px;
+      }
+      .issuer {
+        color: #2b55ff;
+        font-size: 20px;
+      }
+      /* --------------------------------------------------------------footer */
+      .footer{
+        max-width: 1550vx;
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+      }
+      .bb{
+        color:blue;
+      }
+
+      
+
+
+
+/* ------------------------------------------------------------------------------- */
+      @media screen and (max-width: 740px) {
+        .navbar {
+          display: flex;
+        }
+        .navitemsi {
+          width: 650px;
+        }
+        .navitems {
+          display: none;
+        }
+        .togglebar {
+          margin-left: 20px;
+          display: flex;
+          justify-items: end;
+        }
+        .togglelogo {
+          float: right;
+        }
+        .footer{
+            background-color: aliceblue;
+            color: #000000;
+        }
+        
+      }
+      /* -------------------------------------------------------------q2 */
+      @media screen and (max-width: 1150px) {
+        .main {
+          max-width: 740px;
+          display: block;
+        }
+        .content {
+          height: 500px;
+        }
+        .image {
+          padding-top: 0%;
+          margin-top: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navitemsi">
+        <img
+          class="navlogo"
+          src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+          alt=""
+        />
+      </div>
+      <div class="navitems">
+        <a href="" class="navitem">Home</a>
+        <a href="" class="navitem">Blog</a>
+        <a href="" class="navitem">About</a>
+        <a href="" class="navitem">Content</a>
+      </div>
+      <div class="navitems">
+        <button class="navbutton">Login</button>
+      </div>
+      <div class="togglebar">
+        <img
+          src="https://icons.veryicon.com/png/o/miscellaneous/big-data-regular-monochrome-icon/sidebar-4.png"
+          alt=""
+          class="togglelogo"
+        />
+      </div>
+    </nav>
+    <div class="main">
+      <div class="content">
+        <h1 class="head1">Say Hi To</h1>
+        <span class="head2">One Card</span>
+        <h4 class="issuer">Co-branded Card issuers</h4>
+        <img
+          src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png"
+          alt=""
+          class="contentimg"
+        />
+        <p class="para">
+          India's best metal credit card. Built with full stack tech. Backed by
+          the principles of simplicity, transparency, and giving back control to
+          the user
+        </p>
+      </div>
+      <div class="image">
+        <img
+          src="https://www.sbmbank.co.in/smart_banking/content/images/banner1.webp"
+          alt=""
+          class="onecardlogo"
+        />
+      </div>
+    </div>
+    <div class="footer">
+        <h1 class="bb">No Hidden Fees Ever</h1>
+        <h2>No Joining Fees</h2>
+        <h2>No Annual Fees</h2>
+        <h2>No Rewards Redemption Fees </h2>
+    </div>
+  </body>
+</html>
